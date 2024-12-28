@@ -7,7 +7,7 @@ class AppDrawer extends StatelessWidget {
       child: ListView(
         padding: EdgeInsets.zero,
         children: [
-          DrawerHeader(
+          const DrawerHeader(
             decoration: BoxDecoration(
               color: Colors.blue,
             ),
@@ -17,29 +17,29 @@ class AppDrawer extends StatelessWidget {
             ),
           ),
           ListTile(
-            leading: Icon(Icons.list),
-            title: Text('Liste des Posts'),
+            leading: const Icon(Icons.list),
+            title: const Text('Liste des Posts'),
             onTap: () {
               Navigator.pushNamed(context, '/listPosts');
             },
           ),
           ListTile(
-            leading: Icon(Icons.add),
-            title: Text('Ajouter un Post'),
+            leading: const Icon(Icons.add),
+            title: const Text('Ajouter un Post'),
             onTap: () {
               Navigator.pushNamed(context, '/addPost');
             },
           ),
           ListTile(
-            leading: Icon(Icons.list_alt),
-            title: Text('Liste des Todos'),
+            leading: const Icon(Icons.list_alt),
+            title: const Text('Liste des Todos'),
             onTap: () {
               Navigator.pushNamed(context, '/listTodos');
             },
           ),
           ListTile(
-            leading: Icon(Icons.add_task),
-            title: Text('Ajouter un Todo'),
+            leading: const Icon(Icons.add_task),
+            title: const Text('Ajouter un Todo'),
             onTap: () {
               Navigator.pushNamed(context, '/addTodo');
             },
